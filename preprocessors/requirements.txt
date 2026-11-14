@@ -1,5 +1,8 @@
 spacy
 newspaper3k
+# newspaper3k imports lxml.html.clean, which lxml 5.2 moved out into its
+# own distribution. Without this the text preprocessor fails to import.
+lxml_html_clean
 opencv-python
 mtcnn
 numpy
